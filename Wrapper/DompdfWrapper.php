@@ -19,7 +19,7 @@ class DompdfWrapper
 	 * @param  string $html    The html to be rendered
 	 * @param  string $docname The name of the document to be served
 	 */
-	public function getpdf($html)
+	public function getpdf($html, $papersize = DOMPDF_DEFAULT_PAPER_SIZE, $orientation = DOMPDF_DEFAULT_ORIENTATION)
 	{
 		// test if dompdf config exists in symfony app folder
 		$testFilePath = "/../../../../../../app/dompdf_config.inc.php";
@@ -32,7 +32,7 @@ class DompdfWrapper
 
 		$this->pdf = new \DOMPDF();
 
-		$this->pdf->set_paper(DOMPDF_DEFAULT_PAPER_SIZE);
+		$this->pdf->set_paper($papersize, $orientation);
 		$this->pdf->load_html($html);
 		$this->pdf->render();
 	}
