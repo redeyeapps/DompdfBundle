@@ -1,5 +1,5 @@
 {
-    "name": "slik/dompdf-bundle",
+    "name": "redeyeapps/dompdf-bundle",
     "version": "1.0.0-alpha",
     "description": "A wrapper for using DomPDF inside Symfony 3",
     "keywords": ["symfony", "symfony3", "development", "bundle"],
