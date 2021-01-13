@@ -22,7 +22,7 @@
     "require": {
         "php": ">=5.3",
         "symfony/framework-bundle": ">=3.0",
-        "symfony/symfony": ">=3.0"
+        "symfony/symfony": ">=3.0|>=4.4"
     },
     "autoload":     {
         "psr-0": { "Slik\\DompdfBundle": "" }
